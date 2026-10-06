@@ -1,5 +1,15 @@
 # Hi, I'm AL-Yichen 👋
 
+- 🔭 I'm currently working on AI-related projects, Minecraft mods, and web applications.
+- 🌱 I'm currently learning AI algorithms, machine learning, deep learning, LLMs, and the mathematics behind AI.
+- 💻 I have been learning both frontend and backend development, while continuing to improve my programming skills with Python and Java.
+- 👯 I'm looking to collaborate on open-source AI/LLM projects and interesting experimental projects.
+- 💬 Ask me about AI, web development, Minecraft modding, AstrBot, or the things I'm currently experimenting with.
+- 📚 I'm also learning English and preparing for my next academic step.
+- 📫 How to reach me: GitHub Issues or Discussions are welcome!
+
+> 🐋 Learning, building, breaking, fixing, and learning again.
+
 I build small, focused tools for the **DeepSeek Harness (dsh)** ecosystem — mostly
 browser-side client plugins that fix one specific annoyance properly instead of
 piling on features.
@@ -38,14 +48,6 @@ dsh plugin --profile web add dsh-fullscreen-input
   attack surface in a single page.
 - **Verify on the real machine.** Several bugs in that codebase were invisible to static
   checks and offline tests — they only showed up once actually loaded.
-
-<!-- Want a fuller profile? Uncomment and fill in — only you can vouch for these:
-- 🔭 I'm currently working on ...
-- 🌱 I'm currently learning ...
-- 👯 I'm looking to collaborate on ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
--->
 
 ---
 
