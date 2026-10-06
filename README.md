@@ -1,16 +1,52 @@
-## Hi there 👋
+# Hi, I'm AL-Yichen 👋
 
-<!--
-**AL-Yichen/AL-Yichen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build small, focused tools for the **DeepSeek Harness (dsh)** ecosystem — mostly
+browser-side client plugins that fix one specific annoyance properly instead of
+piling on features.
 
-Here are some ideas to get you started:
+<!-- Profile-view counter. If it ever renders blank, delete this <picture> block —
+     a broken counter image is worse than no counter. -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://count.getloli.com/@AL-Yichen?name=AL-Yichen&theme=gelbooru&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto">
+  <img alt="AL-Yichen profile views" src="https://count.getloli.com/@AL-Yichen?name=AL-Yichen&theme=gelbooru&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto">
+</picture>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
+## What I'm building
+
+**[dsh-fullscreen-input](https://github.com/AL-Yichen/dsh-fullscreen-input)** — a full-screen
+panel for the dsh composer. `Enter` only ever inserts a newline there; `Ctrl+Enter` is the
+only key that sends. That sidesteps the host composer's 10 ms composition grace window, where
+a Chinese IME's `Shift+Enter` is easily misread as "send".
+
+[![npm](https://img.shields.io/npm/v/dsh-fullscreen-input?color=4176e6)](https://www.npmjs.com/package/dsh-fullscreen-input)
+[![License](https://img.shields.io/github/license/AL-Yichen/dsh-fullscreen-input?color=4176e6)](https://github.com/AL-Yichen/dsh-fullscreen-input/blob/main/LICENSE)
+[![DSH](https://img.shields.io/badge/DSH-%3E%3D0.2.0--rc.1%20%3C0.3.0--0-4176e6)](https://github.com/AL-Yichen/dsh-fullscreen-input#兼容性)
+
+Install it with:
+
+```sh
+dsh plugin --profile web add dsh-fullscreen-input
+```
+
+## How I work
+
+- **Fix the cause, not the symptom.** The full-screen panel exists because a 10 ms timing
+  window in the host keymap cannot be patched from outside — so the panel removes the
+  ambiguity instead of fighting it.
+- **Keep the surface small.** That plugin makes no network requests, uses no `ctx.fs` or
+  `ctx.shell`, and stores exactly one preference key. Its `SECURITY.md` states the whole
+  attack surface in a single page.
+- **Verify on the real machine.** Several bugs in that codebase were invisible to static
+  checks and offline tests — they only showed up once actually loaded.
+
+<!-- Want a fuller profile? Uncomment and fill in — only you can vouch for these:
+- 🔭 I'm currently working on ...
+- 🌱 I'm currently learning ...
+- 👯 I'm looking to collaborate on ...
 - 💬 Ask me about ...
 - 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 -->
+
+---
+
+<sub>If [dsh-fullscreen-input](https://github.com/AL-Yichen/dsh-fullscreen-input) is useful to you, a ⭐ is the best support.</sub>
